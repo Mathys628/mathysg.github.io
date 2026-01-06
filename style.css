@@ -75,27 +75,35 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 5rem 3rem;
-  flex-wrap: wrap;
-  gap: 3rem;
   min-height: calc(100vh - 80px);
-  animation: fadeIn 1s ease-in-out;
+  position: relative;
 }
 
 .hero-content {
-  max-width: 500px;
+  text-align: center;      /* centre le texte */
+  max-width: 90%;          /* limite la largeur pour éviter que ça déborde */
+  margin: 0 auto;
 }
 
 .hero-content h2 {
-  font-size: 2.7rem;
-  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 4rem;         /* taille grande mais pas excessive */
   color: #10b981;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;     /* reste sur une seule ligne */
+  word-break: keep-all;    /* empêche de casser le texte sur plusieurs lignes */
 }
 
 .hero-content p {
-  color: #94a3b8;
+  margin-top: 1rem;        /* espace sous le h2 */
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  color: #94a3b8;
 }
+
+
+
 
 /* ========== BOUTONS ========== */
 .btn {
@@ -116,30 +124,7 @@ nav {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
 }
 
-/* ========== IMAGE PROFIL ========== */
-.hero-image {
-  position: relative;
-}
-
-.hero-image::before {
-  content: "";
-  position: absolute;
-  inset: -15px;
-  border-radius: 50%;
-  background: #10b981;
-  filter: blur(30px);
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.hero-image img {
-  width: 250px;
-  border-radius: 50%;
-  border: 3px solid #10b981;
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.35);
-}
-
-
+/* ========== ABOUT ========== */
 .about {
   padding: 4rem 2rem;
   background-color: #0f172a;
@@ -157,7 +142,6 @@ nav {
 .about-container p {
   margin-bottom: 1.2rem;
 }
-
 
 /* ========== TITRES DE SECTION ========== */
 .section-title {
@@ -260,6 +244,8 @@ nav {
   backdrop-filter: blur(6px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  height: 100%; /* toutes les cartes ont la même hauteur */
 }
 
 .project-card:hover {
@@ -278,6 +264,9 @@ nav {
 /* Contenu projet */
 .project-content {
   padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* permet de pousser les spans en bas */
 }
 
 .project-content h3 {
@@ -293,10 +282,12 @@ nav {
   margin-bottom: 1.2rem;
 }
 
+/* Tags projets en bas */
 .project-tech {
   display: flex;
   gap: 0.6rem;
   flex-wrap: wrap;
+  margin-top: auto; /* pousse les tags en bas */
 }
 
 .project-tech span {
@@ -305,6 +296,7 @@ nav {
   border-radius: 999px;
   font-size: 0.8rem;
 }
+
 
 /* ========== CV ========== */
 .cv {
@@ -327,6 +319,15 @@ nav {
   justify-content: center;
   gap: 1.5rem;
   flex-wrap: wrap;
+}
+
+
+.about,
+.skills,
+.projects,
+.cv {
+  padding-top: 3rem;   /* moins de padding haut */
+  padding-bottom: 3rem; /* moins de padding bas */
 }
 
 /* ========== SCROLL TOP BUTTON ========== */
@@ -369,7 +370,6 @@ footer {
 }
 
 /* ========== FOOTER SOCIAL LINKS ========== */
-
 .social-links {
   display: flex;
   justify-content: center;
@@ -377,7 +377,6 @@ footer {
   margin-bottom: 1.2rem;
 }
 
-/* Lien social */
 .social-link {
   display: flex;
   align-items: center;
@@ -401,16 +400,10 @@ footer {
   display: block;
 }
 
-
-
-
-
-/* Texte */
 .social-link span {
   font-size: 0.9rem;
 }
 
-/* Hover */
 .social-link:hover {
   background-color: rgba(16, 185, 129, 0.3);
   color: #10b981;
@@ -425,7 +418,6 @@ footer {
     gap: 1rem;
   }
 }
-
 
 /* ========== CONTACT PAGE ========== */
 .contact {

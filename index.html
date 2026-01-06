@@ -1,11 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mathys Gaspard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <h1 class="logo">Mathys Gaspard</h1>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li> 
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2 id="typed-text"></h2>
+      <p>Étudiant en <strong>BUT Informatique à l’IUT de Lens</strong>, passionné par le développement, la programmation et les nouvelles technologies.</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/profil.jpg" alt="Photo de Mathys">
+    </div>
+  </section>
+
+  <section class="about" id="apropos">
+  <h2 class="section-title">À propos de moi</h2>
+
+  <div class="about-container">
+    <p>
+      Je m’appelle <strong>Mathys Gaspard</strong>, étudiant en <strong>BUT Informatique à l’IUT de Lens</strong>.
+      Passionné par le développement, je m’intéresse aussi bien au <strong>développement logiciel</strong>
+      qu’au <strong>web</strong>.
+    </p>
+
+    <p>
+      Au cours de mes études, j’ai réalisé plusieurs projets en <strong>Java</strong>, <strong>Python</strong>
+      et <strong>web</strong>, aussi bien en autonomie qu’en équipe, notamment dans le cadre de SAÉ.
+    </p>
+
+    <p>
+      Curieux, motivé et rigoureux, je cherche constamment à améliorer mes compétences
+      et à découvrir de nouvelles technologies.
+    </p>
+  </div>
+</section>
+
+
+  <section class="skills" id="competences">
+  <h2 class="section-title">Mes compétences</h2>
+
+  <div class="skills-container">
+
+    <div class="skill-card">
+      <h3>Langages</h3>
+      <div class="skill-list">
+        <span><img src="images/java.png" alt="logo java"><p>java</p></span>
+        <span><img src="images/python.png" alt="logo python"><p>python</p></span>
+        <span><img src="images/html5.png" alt="logo html5"><p>html</p></span>
+        <span><img src="images/css.png" alt="logo css"><p>css</p></span>
+        <span><img src="images/postgresql.png" alt="logo postgresql"><p>postgresql</p></span>
+        <span><img src="images/php.png" alt="logo php"><p>php</p></span>
+        <span><img src="images/bash.png" alt="logo bash"><p>bash</p></span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <h3>Outils & Frameworks</h3>
+      <div class="skill-list">
+        <span><img src="images/git.png" alt="logo git"><p>git</p></span>
+        <span><img src="images/vscode.png" alt="logo vs code"><p>VSCode</p></span>
+        <span><img src="images/eclipse.png" alt="logo eclipse"><p>Eclipse</p></span>
+        <span><img src="images/idea.png" alt="logo idea"><p>IDEA</p></span>
+        <span><img src="images/laravel.png" alt="logo laravel"><p>Laravel</p></span>
+        <span><img src="images/phpstorm.png" alt="logo phpstorm"><p>PHPStorm</p></span>
+        <span><img src="images/pycharm.png" alt="logo pycharm"><p>PyCharm</p></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="projects" id="projets">
+  <h2 class="section-title">Mes projets</h2>
+
+  <div class="projects-container">
+
+    <a href="https://github.com/Mathys628/Bomberman" class="project-card">
+      <img src="/images/bomberman.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>Bomberman</h3>
+
+        <p>
+              Conception d'une réplique du célèbre jeu Bomberman développé en Java avec JavaFX 
+              pour l'interface graphique et Gradle pour l'outil de build et la gestion de dépendances.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/Mathys628/Site-venementiel" class="project-card">
+      <img src="/images/Goutart.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>Site évenementiel</h3>
+
+        <p>
+              Site web réalisé en HTML et CSS pour un atelier de cuisine dans le cadre d’une SAÉ.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="/pages/projets/pong.html" class="project-card">
+      <img src="/images/soundwave.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>SoundWave</h3>
+
+        <p>
+              Site web Laravel réalisé en collaboration avec des étudiants MMI lors du marathon du web en 2 jours.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="https://github.com/Mathys628/Pong" class="project-card">
+      <img src="/images/Pong.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>Pong</h3>
+
+        <p>
+          Réalisation du célèbre jeu Pong en Python avec la bibliothèque Pygame.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/Mathys628/Pacman" class="project-card">
+      <img src="/images/pacman.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>Pacman</h3>
+
+        <p>
+          Réalisation du célèbre jeu Pacman en Java en utilisant divers patron de conception.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/Mathys628/Cin-Hub" class="project-card">
+      <img src="/images/cinehub.png" alt="Projet Pong" class="project-image">
+
+      <div class="project-content">
+        <h3>Cinéhub (En cours)</h3>
+
+        <p>
+          Réalisation d'un site de films en Php en utilisant le framework Laravel.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Pygame</span>
+          <span>SAÉ</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<section class="cv" id="cv">
+  <h2 class="section-title">Mon CV</h2>
+
+  <div class="cv-container">
+    <div class="cv-buttons">
+      <a href="/pdf/cvfr.pdf" class="btn cv-btn" download>
+        📥 CV en français
+      </a>
+
+      <a href="/pdf/cven.pdf" class="btn cv-btn" download>
+        📥 CV en anglais
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <button id="scrollTopBtn">↑</button>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/mathys-gaspard/" target="_blank" class="social-link">
+        <img src="/images/linkedin.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="https://github.com/Mathys628" target="_blank" class="social-link">
+        <img src="/images/github.png" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+    </div>
+    <p>© 2025 Mathys Gaspard — Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
